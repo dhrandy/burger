@@ -4,3 +4,13 @@
 // - updateOne()
 
 //export the ORM object in module.exports
+var connection = require("../config/connection")
+
+selectALL()
+
+insertOne()
+
+updateOne()
+
+
+module.exports = orm;
