@@ -1,10 +1,10 @@
-<img src = "../public/assets/img/burger.jpg" class="burger">
+<div><img src = "../public/assets/img/burger.jpg" class="burger"></div>
 
 <h2>Burgers to be devoured.</h2>
 
 <ul>
   {{#each burgers}}
-    {{#unless sleepy}}
+    {{#unless devoured}}
       {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
