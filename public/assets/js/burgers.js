@@ -4,7 +4,7 @@ $(function() {
       console.log("Devoured button works.")
       var id = $(this).data("id");
       console.log(id)
-      var newDevour = $(this).data("newDevour");
+      var newDevour = $(this).data(true);
       console.log(newDevour)
       var newDevourState = {
         devoured: newDevour
