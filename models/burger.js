@@ -1,7 +1,5 @@
-// import orm.js 
-// create the code that will call the ORM functions using burger specific input for the ORM
-
-var orm = require("../config/orm");
+// import orm.js, create the code that will call the ORM functions using burger specific input for the ORM
+var orm = require("../config/orm.js");
 
 var burger = {
     all: function(cb) {
@@ -9,8 +7,7 @@ var burger = {
             cb(res);
         });
     },
-
-    create:function(cols, vals, cb) {
+    create: function(cols, vals, cb) {
         orm.create("burgers", cols, vals, function(res) {
             cb(res);
         });
