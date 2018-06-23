@@ -1,8 +1,33 @@
 body {
-    background-color: #fce8c4;
+    background-color: #ef9366;
     margin: auto;
 }
 
-.burger {
+.center {
     text-align: center;
+}
+
+h4 {
+    margin-top: 20px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+}
+
+.burger {
+    margin-bottom: 30px;
+}
+
+.notTitle {
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    opacity: 0.5;
 }

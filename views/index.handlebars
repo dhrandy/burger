@@ -1,41 +1,62 @@
-<container>
-  <row>
-  <div><img src = "/assets/img/burger.jpg" class="burger"></div>
-  </row>
-</container>
+<div class = "container">
+  <div class = "row">
+    <div class="col-sm center">
+  <div><img src = "/assets/img/burger.png" class="burger"></div>
+  </div>
+</div>
+</div>
 
-<container>
-  <row>
-<h2>Burgers to be devoured.</h2>
+<div class = "container">
+  <div class = "row">
+    <div class="col-sm">
+<h4>Burgers &nbsp;&nbsp; to &nbsp;&nbsp; devoured</h4>
 
-<ul>
+<ul class = "notTitle">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devour=false}}
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Burgers that were devoured.</h2>
+<div class="col-sm">
+<h4>Burgers &nbsp;&nbsp; Devoured</h4>
 
-<ul>
+<ul class = "notTitle">
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devour=true}}
+    <li>
+      {{this.burger_name}}
+      </li>
     {{/if}}
   {{/each}}
 </ul>
+</div>
+  </div>
+  </div>
 
-<h2>Add a burger</h2>
+<div class = "container">
+  <div class = "row">
+    <div class="col-sm">
+      <div class = "center mx-auto">
+
+<h4>Add &nbsp;&nbsp; a &nbsp;&nbsp;  burger</h4>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="bu">Burger Name:</label>
+    <label for="bu" class = "notTitle">Burger Name:</label>
     <input type="text" id="bu" name="burger_name">
     {{!-- need something here --}}
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit" class = "notTitle">Add Burger</button>
 </form>
-</row>
-</container>
+</div>
+</div>
+</div>
+</div>
+
+<div class = "footer">
+  Coded with HTML/CSS/Bootstrap/JS/JQuery/ExpressJS/Node/Handlebars/MySQL by <strong>Randy Gentry</strong>
+</div>

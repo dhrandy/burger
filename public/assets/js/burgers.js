@@ -7,6 +7,7 @@ $(function() {
         devoured: newDevour
       };
       console.log('newDevourState: ', newDevourState);
+      
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
@@ -28,6 +29,7 @@ $(function() {
         burger_name: $("#bu").val().trim(),
         //check below
         devoured: $("1").val()
+        
       };
   
       // Send the POST request.
