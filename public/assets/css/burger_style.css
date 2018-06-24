@@ -12,6 +12,7 @@ h4 {
     font-family: 'Monoton', cursive;
     text-align: center;
     text-decoration: underline;
+    font-size: 27px;
 }
 
 .burger {
@@ -20,10 +21,13 @@ h4 {
 
 .notTitle {
     font-family: 'Sacramento', cursive;
-    font-size: 24px;
-    border-radius: 20px;
+    font-size: 23px;
+    /* border: 2px; */
+}
+
+.btn {
+    border-radius: 17px;
     margin: 4px;
-    border: 2px;
 }
 
 li {
