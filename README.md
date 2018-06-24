@@ -6,7 +6,7 @@ This is a full-stack application that utilizes MySQL, Node, Express, Handlebars 
 
 ### MySQL Database Setup
 
-In order to run this application, you should have the MySQL database already set up on your machine.  You will be able to create the *burgers_db* database and the *burgers* table with the SQL code found in [schema.sql](schema.sql). Run this code inside your MySQL client to populate the database, then you will be ready to proceed with running the server.js file from node.
+In order to run this application, you should have the MySQL database already set up on your machine.  You will be able to create the *burgers_db* database and the *burgers* table with the SQL code found in the schema.sql. Run this code inside your MySQL client to populate the database, then you will be ready to proceed with running the server.js file from node.
 
 **MySQL Database Setup Screenshot**
 ![](public/assets/screenshots/mysql.jpg)
