@@ -24,19 +24,19 @@ connection.connect(function(err) {
 //comment out to run locally everything between these = signs
 //=======================================================================================
 
-// if (process.env.JAWSDB_URL) {
-//     connection = mysql.createConnection(process.env.JAWSDB_URL);
-// } else {
-//     connection = mysql.createConnection({
-//         host: 'localhost',
-//         user: 'root',
-//         password: 'hacktheplanet',
-//         database: 'todoagain_db'
-//     });
-// };
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: 'hacktheplanet',
+        database: 'todoagain_db'
+    });
+};
 
-// // Export connection for our ORM to use
-//  connection.connect();  // comment out to run locally
+// Export connection for our ORM to use
+ connection.connect();  // comment out to run locally
 
 //=======================================================================================
 //=======================================================================================
