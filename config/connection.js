@@ -37,6 +37,7 @@ if (process.env.JAWSDB_URL) {
 
 // Export connection for our ORM to use
  connection.connect();  // comment out to run locally
+ 
 //=======================================================================================
 //=======================================================================================
 module.exports = connection;

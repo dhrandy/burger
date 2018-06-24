@@ -1,60 +1,54 @@
 <div class = "container">
   <div class = "row">
     <div class="col-sm center">
-  <div><img src = "/assets/img/burger.png" class="burger"></div>
+      <img src = "/assets/img/burger.png" class="burger">
+    </div>
   </div>
-</div>
 </div>
 
 <div class = "container">
   <div class = "row">
     <div class="col-sm">
-<h4>Burgers &nbsp;&nbsp; to &nbsp;&nbsp; devoured</h4>
+      <h4>Burgers &nbsp;&nbsp; to &nbsp;&nbsp; devoured</h4>
+      <ol class = "notTitle">
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devour=false}}
+          {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
 
-<ul class = "notTitle">
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
-</div>
-
-<div class="col-sm">
-<h4>Burgers &nbsp;&nbsp; Devoured</h4>
-
-<ul class = "notTitle">
-  {{#each burgers}}
-    {{#if devoured}}
-    <li>
-      {{this.burger_name}}
-      </li>
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
+    <div class="col-sm">
+      <h4>Burgers &nbsp;&nbsp; Devoured</h4>
+      <ol class = "notTitle">
+        {{#each burgers}}
+          {{#if devoured}}
+            <li>
+            {{this.burger_name}}
+            </li>
+          {{/if}}
+        {{/each}}
+      </ol>
+    </div>
   </div>
-  </div>
+</div>
 
 <div class = "container">
   <div class = "row">
     <div class="col-sm">
       <div class = "center mx-auto">
-
-<h4>Add &nbsp;&nbsp; a &nbsp;&nbsp;  burger</h4>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bu" class = "notTitle">Burger Name:</label>
-    <input type="text" id="bu" name="burger_name">
-    {{!-- need something here --}}
+        <h4>Add &nbsp;&nbsp; a &nbsp;&nbsp;  burger</h4>
+        <form class="create-form">
+          <div class="form-group">
+            <label for="bu" class = "notTitle">Burger Name:</label>
+            <input type="text" id="bu" name="burger_name">
+          </div>
+          <button type="submit" class = "notTitle">Add Burger</button>
+        </form>
+      </div>
+    </div>
   </div>
-
-  <button type="submit" class = "notTitle">Add Burger</button>
-</form>
-</div>
-</div>
-</div>
 </div>
 
 <div class = "footer">
