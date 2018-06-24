@@ -20,7 +20,10 @@ connection.connect(function(err) {
     console.log("connected as id " + connection.threadId);
 });
 
-//comment out to run locally
+//=======================================================================================
+//comment out to run locally everything between these = signs
+//=======================================================================================
+
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -33,5 +36,7 @@ if (process.env.JAWSDB_URL) {
 };
 
 // Export connection for our ORM to use
-connection.connect();  // comment out to run locally
+ connection.connect();  // comment out to run locally
+//=======================================================================================
+//=======================================================================================
 module.exports = connection;
