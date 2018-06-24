@@ -15,6 +15,9 @@ In order to run this application, you should have the MySQL database already set
 
 Within the burger webpage you have the ability to: see current burgers, change the burger's state from 'To be Devoured' to 'Devoured', and add a new burger. To switch burger states all you need to do is select the 'Devour' button in the left column beside the burger you want to devour. To add a burger you'll type the burger you'd like to add in the empty form under 'Add a Burger' and press enter or click the button below the field. Once you do this, the burger will be added to the 'To be Devoured' section.
 
+To see the burger app live, click on the following link:
+https://dhrandy-burger.herokuapp.com/
+
 
 To run the burger app locally on your PC/Mac please follow the steps below:
 
